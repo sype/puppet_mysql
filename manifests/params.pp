@@ -14,6 +14,13 @@ class mysql::params {
 
   $bind_address        = '*'
   $port                = 3306
+  $key_buffer          = '16M' 
+  $max_allowed_packet  = 32M   
+  $thread_stack        = 192K
+  $thread_cache_size   = 8
+  $myisam-recover      = BACKUP
+  $query_cache_limit   = 1M
+  $query_cache_size    = 16M
   $etc_root_password   = false
   $ssl                 = false
   $restart             = true
